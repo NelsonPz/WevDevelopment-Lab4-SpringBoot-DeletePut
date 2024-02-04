@@ -140,10 +140,10 @@ public class MainController {
                 return new ResponseEntity<>("Success",HttpStatus.NO_CONTENT);
             } else
             {
-                return new ResponseEntity<>("Profile does not exist",HttpStatus.NOT_FOUND);       
+                return new ResponseEntity<>("Profile exists but still has postings",HttpStatus.CONFLICT);       
             }
         } else {
-            return new ResponseEntity<>("profleId exists but still has postings",HttpStatus.CONFLICT);
+            return new ResponseEntity<>("Profile does not exist",HttpStatus.NOT_FOUND);
         }
     } 
 
@@ -160,10 +160,10 @@ public class MainController {
                 return new ResponseEntity<>("Success",HttpStatus.NO_CONTENT);
             } else
             {
-                return new ResponseEntity<>("Profile does not exist",HttpStatus.NOT_FOUND);       
+                return new ResponseEntity<>("Posting does not exist",HttpStatus.NOT_FOUND);       
             }
         } else {
-            return new ResponseEntity<>("profleId exists but still has postings",HttpStatus.CONFLICT);
+            return new ResponseEntity<>("Profile does not exist",HttpStatus.NOT_FOUND);
         }
     }
 

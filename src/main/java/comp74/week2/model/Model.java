@@ -122,12 +122,14 @@ public class Model {
     }
     public Boolean deleteProfileById(Profile profile) {
 
-        if (profiles.containsValue(profile)) {
+        if (profile.getPostings().isEmpty()) {
+
             userMap.remove(profile.getUserName());
             profiles.remove(profile.getProfileId());
 
             return true;
         }
+    
         return false;
     }
 
@@ -144,9 +146,6 @@ public class Model {
             }
         } 
          
-
-
-        
         return false;
     } 
 
