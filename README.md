@@ -1,4 +1,4 @@
-# Project Name
+# SpringBoot RESTful API demo
 
 ## Overview
 This project is a Spring Boot application that serves as a RESTful API for managing user profiles and their postings. It provides endpoints for performing CRUD (Create, Read, Update, Delete) operations on profiles and postings.
