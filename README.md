@@ -37,3 +37,4 @@ This project is a Spring Boot application that serves as a RESTful API for manag
 - **DELETE /api/profiles/{profileId}:** Delete a profile.
 - **PUT /api/profiles/{profileId}/postings/{postingId}:** Update a posting within a profile.
 
+**Author**: Nelson Perez
